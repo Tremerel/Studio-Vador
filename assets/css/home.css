@@ -1,0 +1,100 @@
+/* Container */
+
+.home .container {
+    max-width: 1266px;
+    margin: 70px auto;
+}
+
+/* Studio Image */
+.home .studio-img {
+    float: right;
+    margin: 70px 10px 0;
+    position: relative;
+    border-radius: 70px 0 70px 0;
+    overflow: hidden;
+}
+.home .studio-img img {
+    filter: brightness(1.5);
+}
+.home .studio-img-overlay{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: #525252;
+    z-index: 99;
+}
+
+/* Studio Texte */
+.home-text{
+    color: #fff;
+    margin-top: 180px;
+    position: absolute;
+}
+.home-text h6{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 16px;
+    margin: 20px 0;
+}
+.home-text h1 {
+    text-transform: uppercase;
+    font-size: 100px;
+}
+.home-text p {
+    max-width: 500px;
+    font-size: 16px;
+    margin-top: 230px;
+}
+
+.home-text .name span {
+    margin-right: 15px;
+   display: inline-block;
+}
+.home-text .name span:last-child {
+    margin-right: 0;
+}
+
+/* Comportement cacher par default */
+.home .studio-img img,
+.studio span,
+.name span,
+.logo,
+.menu,
+.small-intro span {
+    opacity: 0;
+}
+
+
+@media (max-width:560px) {
+    .home .studio-img {
+        width: 70%;
+        margin: 20px 10px 0;
+    }
+    
+    .home-text {
+        color: #fff;
+        margin-top: 50px;
+        position: absolute;
+        margin-left: 30px;
+    }
+
+    .home-text h1 {
+        text-transform: uppercase;
+        font-size: 70px;
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 100px;
+    }
+    span.char8 {
+        /* margin-left: 30px; */
+    }
+    .home-text p {
+        max-width: 360px;
+        margin-top: 150px;
+    }
+}
