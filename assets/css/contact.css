@@ -1,0 +1,6 @@
+/* Comportement cacher par default */
+.logo,
+.menu,
+.card-container{
+    opacity: 0;
+}

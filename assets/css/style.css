@@ -68,6 +68,12 @@ nav{
 .logo{
     padding: .5em;
     font-size: 30px;
+    width: 60px;
+    height: 60px;
+}
+.logo img {
+    width: 60px;
+    height: 60px;
 }
 nav ul {
     display: grid;
@@ -119,7 +125,7 @@ nav ul li.btn a:hover{
     nav{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        height: 69px;
+        height: 70px;
     }
     .logo {
         padding: 1em;

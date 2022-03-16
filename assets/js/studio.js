@@ -10,11 +10,12 @@ if(pageWidth > 1000){
     console.log('ok')
     $(document).ready(function(){
     
-        // logo 
+        // Menu 
         anime({
-            targets: '.logo',
+            targets: '.menu, .logo',
             opacity: 1,
-            duration: 3000,
+            duration: 4000,
+            delay: anime.stagger(1500, {start:200})
         })
     
         // Card
@@ -28,14 +29,6 @@ if(pageWidth > 1000){
             delay: anime.stagger(500, {start:500}),
         })
 
-        // Menu 
-        anime({
-            targets: '.menu',
-            opacity: 1,
-            duration: 3000,
-            delay: anime.stagger(150, {start:1500})
-        })
-    
         let cards = document.querySelectorAll('.card-container');
         
         cards.forEach((card) => {

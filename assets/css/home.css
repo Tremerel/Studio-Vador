@@ -58,15 +58,6 @@
     margin-right: 0;
 }
 
-/* Comportement cacher par default */
-.home .studio-img img,
-.studio span,
-.name span,
-.logo,
-.menu,
-.small-intro span {
-    opacity: 0;
-}
 
 
 @media (max-width:850px) {
@@ -98,4 +89,14 @@
         max-width: 360px;
         margin-top: 150px;
     }
+}
+
+/* Comportement cacher par default */
+.home .studio-img img,
+.studio span,
+.name span,
+.logo,
+.menu,
+.small-intro span {
+    opacity: 0;
 }
