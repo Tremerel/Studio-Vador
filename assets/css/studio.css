@@ -1,5 +1,6 @@
 .container{
-    margin: 100px auto 0;
+    margin: 0 auto;
+    margin-top: 270px;
     position: relative;
     width: 100%;
     color: #fff;
@@ -40,6 +41,13 @@
     transition: all 1s ease-out;
 
 }
+
+@media (max-width:850px){
+    .container {
+        margin-top: 170px;
+    }
+}
+
 
 /* Comportement cacher par default */
 .logo,

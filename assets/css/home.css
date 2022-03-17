@@ -1,3 +1,4 @@
+
 /* Container */
 
 .home .container {
@@ -31,14 +32,14 @@
 /* Studio Texte */
 .home-text{
     color: #fff;
-    margin-top: 180px;
+    margin-top: 150px;
     position: absolute;
 }
 .home-text h6{
     text-transform: uppercase;
     letter-spacing: 10px;
     font-size: 16px;
-    margin: 20px 0;
+    margin: 50px 0;
 }
 .home-text h1 {
     text-transform: uppercase;
@@ -68,7 +69,8 @@
     
     .home-text {
         color: #fff;
-        margin-top: 120px;
+        margin-top: 10px;
+        margin-bottom: 100px;
         position: absolute;
         margin-left: 30px;
     }
@@ -82,9 +84,9 @@
         grid-template-rows: repeat(2, 1fr);
         row-gap: 100px;
     }
-    span.char8 {
-        /* margin-left: 30px; */
-    }
+    /* span.char8 {
+        margin-left: 30px; 
+    } */
     .home-text p {
         max-width: 360px;
         margin-top: 150px;

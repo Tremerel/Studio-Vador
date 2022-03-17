@@ -16,9 +16,9 @@ hamburger.addEventListener('click', ()=>{
     animation.add({
         targets: navBar,
         backgroundColor: toggle ? 'rgba(0,0,0,0)' : 'rgba(0,0,0,1)',
-        height: toggle ? 69 : 600,
+        height: toggle ? 69 : 420,
         delay: toggle ? 700 : 0,
-        duration: 800,
+        duration: 1200,
         complete: () => {
             menu.classList.toggle('dummy');
             toggle = menu.classList.contains('dummy');
@@ -29,7 +29,7 @@ hamburger.addEventListener('click', ()=>{
         translateX: toggle ? 0 : [-30,0],
         delay: anime.stagger(100),
         easing: 'easeOutQuad',
-        duration: toggle ? 400 : 600,
+        duration: toggle ? 400 : 500,
     },700).add({
         targets: hamburger_icon[0],
         rotate: toggle ? 0 : 45,

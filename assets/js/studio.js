@@ -17,6 +17,24 @@ if(pageWidth > 1000){
             duration: 4000,
             delay: anime.stagger(1500, {start:200})
         })
+
+        // SVG
+        anime({
+            targets: '#svg',
+            easing: 'easeInSine',
+            translateY: -250,
+            delay: 3200
+        })    
+        anime({
+            targets: '#svg path',
+            strokeDashoffset: [anime.setDashoffset, 1],
+            scale: 1,
+            easing: 'easeInOutSine',
+            duration: 3000,
+            delay: function(el, i) { return i * 250 },
+            direction: 'alternate',
+            loop: false
+        });
     
         // Card
         anime({
@@ -26,7 +44,7 @@ if(pageWidth > 1000){
             rotate: function() { return anime.random(10, -15); },
             easing: 'easeInOutQuad',
             duration: 3000,
-            delay: anime.stagger(500, {start:500}),
+            delay: anime.stagger(500, {start:3500}),
         })
 
         let cards = document.querySelectorAll('.card-container');
@@ -58,7 +76,7 @@ if(pageWidth > 1000){
                     targets: card.querySelector('.card'),
                     easing: 'easeOutExpo',
                     translateX: 0,
-                    duration: 1000
+                    duration: 1000,
                 })
                 anime({
                     targets: card.querySelector('.disk-container'),
@@ -78,7 +96,25 @@ if(pageWidth > 1000){
             opacity: 1,
             easing: 'easeOutExpo',
             duration: 1000,
-            delay: anime.stagger(150, {start: 100})
+            delay: anime.stagger(150, {start: 4000})
+        })
+
+        anime({
+            targets: '#svg ',
+            scale: 0.8,
+            easing: 'easeInSine',
+            translateY: -200,
+            delay: 3200
+        })
+        anime({
+            targets: '#svg path',
+            scale: 0.8,
+            strokeDashoffset: [anime.setDashoffset, 1],
+            easing: 'easeInOutSine',
+            duration: 3000,
+            delay: function(el, i) { return i * 250 },
+            direction: 'alternate',
+            loop: false
         })
     })
 }
