@@ -20,23 +20,21 @@ if(pageWidth > 1000){
 
         // SVG
         anime({
+            targets: '#svg path',
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: 'easeInOutSine',
+            duration: 2500,
+            delay: function(el, i) { return i * 500; },
+        });
+        
+        anime({
             targets: '#svg',
             easing: 'easeInSine',
             translateY: -250,
             delay: 3200
         })    
-        anime({
-            targets: '#svg path',
-            strokeDashoffset: [anime.setDashoffset, 1],
-            scale: 1,
-            easing: 'easeInOutSine',
-            duration: 3000,
-            delay: function(el, i) { return i * 250 },
-            direction: 'alternate',
-            loop: false
-        });
-    
         // Card
+        
         anime({
             targets: '.card-container',
             opacity: 1,
@@ -99,21 +97,25 @@ if(pageWidth > 1000){
             delay: anime.stagger(150, {start: 4000})
         })
 
+        // anime({
+        //     targets: '#svg ',
+        //     scale: 0.8,
+        //     duration: 0,
+        // })
         anime({
             targets: '#svg ',
-            scale: 0.8,
             easing: 'easeInSine',
             translateY: -200,
             delay: 3200
         })
         anime({
             targets: '#svg path',
-            scale: 0.8,
-            strokeDashoffset: [anime.setDashoffset, 1],
+            strokeDashoffset: [anime.setDashoffset, 0],
+            scale: 1,
             easing: 'easeInOutSine',
-            duration: 3000,
-            delay: function(el, i) { return i * 250 },
-            direction: 'alternate',
+            duration: 2500,
+            delay: function(el, i) { return i * 500 },
+            direction: "reverse",
             loop: false
         })
     })
