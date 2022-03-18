@@ -33,13 +33,16 @@ hamburger.addEventListener('click', ()=>{
     },700).add({
         targets: hamburger_icon[0],
         rotate: toggle ? 0 : 45,
-        translateY: toggle ? 0 : -5,
+        width: toggle ? 30 : 32,
+        translateY: toggle ? 0 : -4,
+        translateX: toggle ? 0 : 4,
         duration: 700,
     },0).add({
         targets: hamburger_icon[2],
         rotate: toggle ? 0 : -45,
-        translateY: toggle ? 0 : -5,
-        translateX: toggle ? 0 : 5,
+        width: toggle ? 30 : 32,
+        translateY: toggle ? 0 : 4,
+        translateX: toggle ? 0 : 4,
         duration: 700,
     },0).add({
         targets: hamburger_icon[1],

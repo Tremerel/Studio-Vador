@@ -17,6 +17,9 @@
     height: 300px;
     margin: 10px;
 }
+.card-container:hover{
+    z-index: 10;
+}
 .card-container .disk-container{
     position: relative;
     border-radius: 50%;
@@ -31,7 +34,7 @@
 }
 .card-container .card {
     height: 100%;
-    background: red;
+    background: hsl(0, 100%, 16%);
     border: 1px solid #fff;
     border-radius: 3px;
     width: 100%;
