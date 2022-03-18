@@ -670,7 +670,7 @@ nav ul li.btn a:hover{
         display: block;
         justify-self: end;
         transition: all 1s;
-        background: red;
+        background: hsl(0, 100%, 33%);
         transition: all ease 0.5s;
         border-top-left-radius: 15px;
         border-bottom-right-radius: 15px;
