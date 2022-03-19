@@ -18,21 +18,7 @@ if(pageWidth > 1000){
             delay: anime.stagger(1500, {start:200})
         })
 
-        // SVG
-        anime({
-            targets: '#svg path',
-            strokeDashoffset: [anime.setDashoffset, 0],
-            easing: 'easeInOutSine',
-            duration: 2500,
-            delay: function(el, i) { return i * 500; },
-        });
-        
-        anime({
-            targets: '#svg',
-            easing: 'easeInSine',
-            translateY: -250,
-            delay: 3200
-        })    
+   
         // Card
         
         anime({
@@ -42,7 +28,7 @@ if(pageWidth > 1000){
             rotate: function() { return anime.random(10, -15); },
             easing: 'easeInOutQuad',
             duration: 3000,
-            delay: anime.stagger(500, {start:3500}),
+            delay: anime.stagger(500, {start:3000}),
         })
 
         let cards = document.querySelectorAll('.card-container');
@@ -106,16 +92,15 @@ if(pageWidth > 1000){
             targets: '#svg ',
             easing: 'easeInSine',
             translateY: -200,
-            delay: 3200
+            delay: 2800
         })
         anime({
             targets: '#svg path',
             strokeDashoffset: [anime.setDashoffset, 0],
             scale: 1,
             easing: 'easeInOutSine',
-            duration: 2500,
+            duration: 5000,
             delay: function(el, i) { return i * 500 },
-            direction: "reverse",
             loop: false
         })
     })

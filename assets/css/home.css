@@ -59,8 +59,11 @@
 }
 
 .home-text .name span {
-    margin-right: 15px;
+    margin-right: 1px;
    display: inline-block;
+}
+.home-text .name span:nth-child(6){
+    margin-right: 25px;
 }
 .home-text .name span:last-child {
     margin-right: 0;

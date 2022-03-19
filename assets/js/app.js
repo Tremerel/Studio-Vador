@@ -52,4 +52,24 @@ hamburger.addEventListener('click', ()=>{
 
 })
 
+$(document).ready(function(){
 
+
+    // SVG
+    anime({
+        targets: '#svg path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 5000,
+        delay: function(el, i) { return i * 250 },
+        loop: false
+    });
+    
+    anime({
+        targets: '#svg',
+        easing: 'easeInSine',
+        translateY: -250,
+        delay: 2800
+    }) 
+
+})

@@ -42,29 +42,39 @@ $(document).ready(function(){
     anime({
         targets: '.name span',
         opacity: 1,
+        keyframes: [
+            {translateY: 50, duration: 1500}
+        ],
         duration: 3000,
         easing: 'easeInSine',
-        delay: anime.stagger(100, {start: 4500})
+        delay: anime.stagger(100, {start: 3500})
     })
 
-
+    // anime({
+    //     targets: '.name span',
+    //     keyframes: [
+    //         {translateY: 25, duration: 1500}
+    //     ],
+    //     easing: 'easeInOutExpo',
+    //     delay: anime.stagger(100, {start: 8000})
+    // })
     // Grand titre lettre haut et bas
-    anime({
-        targets: '.name .char2, .name .char4, .name .char6, .name .char9, .name .char11',
-        keyframes: [
-            {translateY: 25, duration: 1500}
-        ],
-        easing: 'easeInOutExpo',
-        delay: 8000,
-    })
-    anime({
-        targets: '.name .char1, .name .char3, .name .char5, .name .char8, .name .char10, .name .char12',
-        keyframes: [
-            {translateY: -25, duration: 1500}
-        ],
-        easing: 'easeInOutExpo',
-        delay: 8000,
-    })
+    // anime({
+    //     targets: '.name .char1, .name .char3, .name .char5, .name .char2, .name .char4, .name .char6',
+    //     keyframes: [
+    //         {translateY: 25, duration: 1500}
+    //     ],
+    //     easing: 'easeInOutExpo',
+    //     delay: 10000,
+    // })
+    // anime({
+    //     targets: ' .name .char8, .name .char10, .name .char12,  .name .char9, .name .char11',
+    //     keyframes: [
+    //         {translateY: 75, duration: 1500}
+    //     ],
+    //     easing: 'easeInOutExpo',
+    //     delay: 8000,
+    // })
 
 
     // logo 
@@ -72,7 +82,7 @@ $(document).ready(function(){
         targets: '.logo',
         opacity: 1,
         duration: 3000,
-        delay:8500
+        delay:5000
     })
 
     // Menu 
@@ -80,7 +90,7 @@ $(document).ready(function(){
         targets: '.menu',
         opacity: 1,
         duration: 3000,
-        delay: anime.stagger(150, {start:8500})
+        delay: anime.stagger(150, {start:5000})
     })
 
     // Intro 
