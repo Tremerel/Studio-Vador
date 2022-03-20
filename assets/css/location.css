@@ -10,7 +10,7 @@
     padding: 20px;
 }
 .card-container{
-    margin-top: 250px;
+    margin-top: 0px;
     position: relative;
     min-width: 1000px;
     display: flex;
@@ -76,6 +76,7 @@
     .card-container .card {
         width: 100%;
         flex-direction: row;
+        margin: 10px 0;
     }
     .card-container  .card:nth-child(even){
         flex-direction: row-reverse;
@@ -89,6 +90,7 @@
 @media (max-width:600px){
     .container .card {
         flex-direction: column;
+        margin: 10px 0;
     }
     .container .card:nth-child(even) {
         flex-direction: column;
