@@ -23,9 +23,9 @@
 .card-container .card {
     position: relative;
     width: 100%;
-    max-width: 500px;
+    max-width: 700px;
     height: 400px;
-    background: #000;
+    background: hsl(230, 25%, 5%);
     cursor: pointer;
 }
 .card-container .card .imgBx {
@@ -53,7 +53,7 @@
     left: 10%;
     width: 80%;
     height: 60px;
-    background: #ffffff80;
+    background: #ffffff00;
     transition: 0.5s;
     overflow: hidden;
     padding: 15px;
@@ -80,7 +80,7 @@
 .card-container .card:hover .content p {
     opacity: 1;
 }
-@media (max-width:1100px){
+@media (max-width:1450px){
     .card-container{
         margin-top: 270px;
     }

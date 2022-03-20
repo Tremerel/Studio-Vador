@@ -15,7 +15,7 @@ hamburger.addEventListener('click', ()=>{
 
     animation.add({
         targets: navBar,
-        backgroundColor: toggle ? 'rgba(0,0,0,0)' : 'rgba(0,0,0,1)',
+        backgroundColor: toggle ? 'rgba(10,11,16,0)' : 'rgba(10,11,16,1)',
         height: toggle ? 69 : 420,
         delay: toggle ? 700 : 0,
         duration: 1200,
