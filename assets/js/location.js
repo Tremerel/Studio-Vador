@@ -10,6 +10,15 @@ if(pageWidth > 1000){
     console.log('ok')
     $(document).ready(function(){
     
+        // card container 
+        anime({
+            targets: '.card-container .card',
+            opacity: 1,
+            duration: 3000,
+            easing: 'easeInOutSine',
+            delay: anime.stagger(350, {start:4000})
+        })
+
         // Menu & Logo
         anime({
             targets: '.menu, .logo',
@@ -22,8 +31,9 @@ if(pageWidth > 1000){
     
 } else {
     $(document).ready(function(){
+        
         anime({
-            targets: ' .menu, .logo',
+            targets: ' .menu, .logo, .card',
             opacity: 1,
             easing: 'easeOutExpo',
             duration: 4000,
@@ -32,3 +42,28 @@ if(pageWidth > 1000){
     })
 }
 
+let cards = document.querySelectorAll('.card');
+
+cards.forEach((card) => {
+    card.addEventListener('mouseenter', (event) => {
+        anime.remove(card.querySelector(".card"));
+
+        anime({
+            targets: card,
+            easing: 'easeOutExpo',
+            scale: 1.1,
+            duration: 1000
+        })
+    })
+
+    card.addEventListener('mouseleave', (event) => {
+        anime.remove(card.querySelector(".card"));
+
+        anime({
+            targets: card,
+            easing: 'easeOutExpo',
+            scale: 1,
+            duration: 1000,
+        })
+    })
+})

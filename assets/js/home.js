@@ -50,33 +50,6 @@ $(document).ready(function(){
         delay: anime.stagger(100, {start: 3500})
     })
 
-    // anime({
-    //     targets: '.name span',
-    //     keyframes: [
-    //         {translateY: 25, duration: 1500}
-    //     ],
-    //     easing: 'easeInOutExpo',
-    //     delay: anime.stagger(100, {start: 8000})
-    // })
-    // Grand titre lettre haut et bas
-    // anime({
-    //     targets: '.name .char1, .name .char3, .name .char5, .name .char2, .name .char4, .name .char6',
-    //     keyframes: [
-    //         {translateY: 25, duration: 1500}
-    //     ],
-    //     easing: 'easeInOutExpo',
-    //     delay: 10000,
-    // })
-    // anime({
-    //     targets: ' .name .char8, .name .char10, .name .char12,  .name .char9, .name .char11',
-    //     keyframes: [
-    //         {translateY: 75, duration: 1500}
-    //     ],
-    //     easing: 'easeInOutExpo',
-    //     delay: 8000,
-    // })
-
-
     // logo 
     anime({
         targets: '.logo',
