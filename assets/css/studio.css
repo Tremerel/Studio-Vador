@@ -99,8 +99,11 @@
 .card-container .card:hover .content p {
     opacity: 1;
 }
-
-
+@media (max-width:1300px){
+    .container{
+        margin-top: 50px;
+    }
+}
 
 /* Comportement cacher par default */
 .logo,
