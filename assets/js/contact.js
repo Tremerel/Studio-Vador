@@ -16,6 +16,21 @@ if(pageWidth > 1000){
             duration: 3000,
             delay: anime.stagger(150, {start:1500})
         })
+            // Images overlay effect
+    anime({
+        targets: '.container .studio-img-overlay',
+        translateX: 1510,
+        delay: 1800,
+        duration: 1500,
+        easing: 'easeInSine'
+    })
+    anime({
+        targets: '.container .studio-img img',
+        opacity: 1,
+        delay: 1500,
+        duration: 2300,
+        easing: 'easeInSine'
+    })
 
     })
 
@@ -23,7 +38,7 @@ if(pageWidth > 1000){
     console.log('pas ok')
     $(document).ready(function(){
         anime({
-            targets: ' .menu, .logo',
+            targets: ' .menu, .logo, .studio-img img',
             opacity: 1,
             easing: 'easeOutExpo',
             duration: 4000,
