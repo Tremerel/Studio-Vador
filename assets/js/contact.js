@@ -20,14 +20,14 @@ if(pageWidth > 1000){
     anime({
         targets: '.container .studio-img-overlay',
         translateX: 1510,
-        delay: 1800,
+        delay: 1000,
         duration: 1500,
         easing: 'easeInSine'
     })
     anime({
-        targets: '.container .studio-img img',
+        targets: '.container .studio-img img,.container  .disque-image-logo',
         opacity: 1,
-        delay: 1500,
+        delay: 1300,
         duration: 2300,
         easing: 'easeInSine'
     })

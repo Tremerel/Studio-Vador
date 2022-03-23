@@ -14,14 +14,47 @@
 }
 
 /* Studio Image */
-.home .studio-img {
+/* .home .studio-img {
     position: absolute;
     right: 10px;
     border-radius: 35px 3px 35px 3px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 .home .studio-img img {
     filter: brightness(1.5);
+    object-fit: contain;
+} */
+.container  .studio-img {
+    position: absolute;
+    right: 10px;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.container  .studio-img img {
+    filter: brightness(1.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+.container  .disque-image-logo{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: rgba(250, 0, 0, 0.651);
+    z-index: 30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .home .studio-img-overlay{
     content: '';
@@ -30,12 +63,13 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #525252;
+    background: hsl(230, 25%, 5%);
     z-index: 99;
 }
 
 /* Studio Texte */
 .home-text{
+    z-index: 200;
     float: left;
     color: #fff;
     margin-top: 70px;
@@ -69,25 +103,25 @@
     margin-right: 0;
 }
 
-
+@media (max-width:1200px) {
+    .container  .studio-img {
+        left: 35%;
+        width: 600px;
+        height: 600px;
+    }
+}
 
 @media (max-width:850px) {
-    .home .studio-img {
-        width: 70%;
-        margin: 20px 10px 0;
-    }
     
     .home-text {
         color: #fff;
         position: absolute;
-        margin-top: 0;
         margin-left: 30px;
     }
 
     .home-text h1 {
         text-transform: uppercase;
         font-size: 70px;
-        margin-top: 110px;
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -98,7 +132,7 @@
     }
     .home-text p {
         max-width: 360px;
-        margin-top: 150px;
+        margin-top: 10px;
     }
 }
 
@@ -107,6 +141,7 @@
 .studio span,
 .name span,
 .logo,
+.disque-image-logo,
 .menu,
 .small-intro span {
     opacity: 0;

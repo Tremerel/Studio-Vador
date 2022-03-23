@@ -14,13 +14,13 @@ $(document).ready(function(){
     // Images overlay effect
     anime({
         targets: '.home .studio-img-overlay',
-        translateX: 1510,
+        translateX: 1500,
         delay: 1000,
         duration: 1500,
         easing: 'easeInSine'
     })
     anime({
-        targets: '.home .studio-img img',
+        targets: '.home .studio-img img, .disque-image-logo',
         opacity: 1,
         delay: 1500,
         duration: 1500,
