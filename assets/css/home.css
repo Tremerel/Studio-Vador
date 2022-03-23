@@ -114,6 +114,7 @@
 @media (max-width:850px) {
     
     .home-text {
+        margin-top: 0;
         color: #fff;
         position: absolute;
         margin-left: 30px;
@@ -125,14 +126,14 @@
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        row-gap: 100px;
+        row-gap: 0;
     }
     .home-text .name span.char6 {
         margin-left:-32px; 
     }
     .home-text p {
         max-width: 360px;
-        margin-top: 10px;
+        margin-top: 200px;
     }
 }
 

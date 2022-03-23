@@ -74,4 +74,18 @@ $(document).ready(function(){
         eading: 'easeInSine',
         delay: anime.stagger(40, {start: 5000})
     })
+    
+    let disque = document.querySelector('.studio-img');
+    
+    var animation = anime({
+        targets: '.studio-img',
+        easing: 'linear',
+        rotate: 360,
+        duration: 1000,
+        loop: true,
+        autoplay: false,
+      });
+    
+    disque.mouseenter = animation.play;
+    disque.mouseleave = animation.pause;
 })
