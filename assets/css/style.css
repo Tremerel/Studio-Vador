@@ -1,3 +1,5 @@
+/* Fonts du site */
+
 @font-face {
     font-family: "Archivo";
     src: url("../content/fonts/ArchivoBlack-Regular.ttf") format("truetype");
@@ -7,9 +9,12 @@
     font-family: "Bahnschrift";
     src: url("../content/fonts/BAHNSCHRIFT.TTF") format("truetype");
 }
+
 h1, h2, h3, h4{
     font-family: "Archivo";
 }
+
+/* Css générale */
 
 *{
     margin: 0;
@@ -25,6 +30,29 @@ body{
     width: 100%;
     font-family: "Bahnschrift";
 }
+
+/* Css des transitions des pages */
+
+.transition-1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: hsl(230, 25%, 5%);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s ease-out;
+}
+
+.transition-1.is-active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Fond d'écran animer en css */
+
 .background {
     position: fixed;
     top: 0;
@@ -40,6 +68,8 @@ body{
     50%{background-position:50% 80%}
     100%{background-position:50% 100%}
 }
+
+/* Etoile du Bg */
 
 #stars{
     width: 1px;
@@ -552,23 +582,19 @@ body{
 
 /* Scroll Bar */
 
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
     background: #383838;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
     background: hsl(0, 100%, 16%);
     border-radius: 3px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(133, 0, 0);
 }
@@ -584,7 +610,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 99;
 }
 
 /* Header */

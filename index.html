@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet Vador</title>
+    
+    <!-- favicon et page -->
+
+    <link rel="icon" type="image/png" href="assets/content/logo/Studio_Vador_logo.png" />
+    <title>Studio Vador</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/home.css">
     <link rel="stylesheet" href="assets/css/transition.css">
-    <!-- <link rel="stylesheet" href="assets/css/contact.css"> -->
 </head>
 <body>
+
+    <!-- Transition de page -->
     <div class="transition transition-1 is-active"></div>
 
     
     <div class="wrapper">
+
+        <!-- Background -->
 
         <div class="background">
             <div id="stars"></div>
@@ -22,10 +30,14 @@
             <div id="stars3"></div>
         </div>
         
+        <!-- Menu -->
+
         <header>
             <nav class="menu">
                 <div class="logo">
-                    <img src="assets/content/logo/logo.png" alt="">
+                    <a href="index.html">
+                        <img src="assets/content/logo/Studio_Vador_logo.png" alt="Studio_Vador_logo">
+                    </a>
                 </div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -41,22 +53,35 @@
             </nav>
         </header>
 
+        <!-- container Principale -->
 
         <div class="home">
+
             <div class="container">
+
+                <!-- Vinyle complet -->
+
                 <div class="studio-img">
+
                     <div class="disque-image-logo">
-                        <img src="assets/content/logo/logo.png" alt="">
+                        <img src="assets/content/logo/Studio_Vador_logo.png" alt="Studio_Vador_logo">
                     </div>
+
                     <span class="studio-img-overlay"></span>
-                    <img class="vinyle" src="assets/content/Home-studio.jpg" alt="">
-                    <img class="vinyle-filter" src="assets/content/studio_vqdor_vinyle_2.png" alt="">
+
+                    <img class="vinyle" src="assets/content/image/Studio_Vador_Home-studio.jpg" alt="Studio_Vador_Home-studio">
+                    <img class="vinyle-filter" src="assets/content/image/studio_vador_vinyle_2.png" alt="studio_vador_vinyle">
+
                 </div>
+
+                <!-- Texte du vinyle -->
+
                 <div class="home-text">
                     <h6 class="studio">Twinkiz</h6>
                     <h1 class="name">Studio Vador</h1>
                     <p class="small-intro">Check it all and call me if you need anything  i can provide !</p>
                 </div>
+
             </div>
         </div>
     </div>
@@ -67,6 +92,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
     <!-- Anime js link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <!-- Mon propre Js -->
     <script src="assets/js/transition.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/home.js"></script>

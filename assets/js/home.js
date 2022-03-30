@@ -1,12 +1,3 @@
-// const width = window.innerWidth;
-
-// var calcWidth = function () {
-//     return width != null? width : document.documentElement && document.documentElement.clientWidth ? document.documentElement.clientWidth : document.body != null ? document.body.clientWidth : null;
-// }
-
-// let pageWidth = calcWidth();
-
-// if(pageWidth > 1000){
 
 $(document).ready(function(){
     $(".name, .studio, .small-intro").lettering();

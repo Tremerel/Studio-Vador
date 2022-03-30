@@ -60,7 +60,8 @@ $(document).ready(function(){
         targets: '#svg path',
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: 'easeInOutSine',
-        duration: 5000,
+        duration: 3000,
+        delay: 1500,
         delay: function(el, i) { return i * 250 },
         loop: false
     });
@@ -69,7 +70,7 @@ $(document).ready(function(){
         targets: '#svg',
         easing: 'easeInSine',
         translateY: -250,
-        delay: 2800
+        delay: 2000
     }) 
 
 })

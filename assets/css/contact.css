@@ -1,102 +1,24 @@
+/* Css du slider */
 
 .mySwiper {
-    position: absolute;
+    position: relative;
     top: 280px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
-    height: 90%;
     max-width: 800px;
-    max-height: 600px;
+    height: 600px;
     overflow: hidden;
-  }
+}
 
-
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-/* .container .studio-img1 ,
-.container .studio-img2 ,
-.container .studio-img3 ,
-.container .studio-img4 {
-    position: absolute;
-    width: 90%;
-    height: 90%;
-    max-width: 800px;
-    max-height: 600px;
-}
-.container .studio-img1 {
-    background-image: url(../content/grande-salles-01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: fade1 20s infinite;
-}
-.container .studio-img2 {
-    background-image: url(../content/grande-salles-02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: fade2 20s infinite;
-}
-.container .studio-img3 {
-    background-image: url(../content/grande-salles-03.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: fade3 20s infinite;
-}
-.container .studio-img4 {
-    background-image: url(../content/grande-salles-04.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: fade4 20s infinite;
 }
 
-@keyframes fade1 {
-    0% { opacity: 1; z-index: 10; }
-    30% { opacity: 1; z-index: 10; }
-    33% { opacity: 0; z-index: 0; }
-    66% { opacity: 0; z-index: 0; }
-    100% { opacity: 0; z-index: 0; }
-}
-@keyframes fade2 {
-    0% { opacity: 0; z-index: 0; }
-    33% { opacity: 1; z-index: 10; }
-    63% { opacity: 1; z-index: 10; }
-    66% { opacity: 0; z-index: 0; }
-    100% { opacity: 0; z-index: 0; }
-}
-@keyframes fade3 {
-    0% { opacity: 0; z-index: 0; }
-    33% { opacity: 0; z-index: 0; }
-    66% { opacity: 1; z-index: 10; }
-    6% { opacity: 1; z-index: 10; }
-    100% { opacity: 0; z-index: 0; }
-} */
-/* @keyframes fade4 {
-    0% { opacity: 0; z-index: 0; }
-    33% { opacity: 0; z-index: 0;  }
-    66% { opacity: 0; z-index: 0; }
-    100% { opacity: 1; z-index: 10; }
-} */
-/* .container  .studio-img {
-    position: absolute;
-    top: 300px;
-    width: 90%;
-    height: 90%;
-    max-width: 800px;
-    max-height: 600px;
-    overflow: hidden;
-}
-.container  .studio-img img {
-    filter: brightness(1.5);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.container  .studio-img-overlay{
+.container .studio-img-overlay{
     content: '';
     position: absolute;
     top: 0;
@@ -104,26 +26,24 @@
     width: 100%;
     height: 100%;
     background: hsl(230, 25%, 5%);
-    z-index: 99;
-} */
+    z-index: 999;
+}
 
-/* @media  (max-width:1000px) {
-    .container  .studio-img {
-        width: 80%;
-        height: 100%;
-        overflow: hidden;
+/* Css carte de contact et icone */
+
+
+/* Media Query */
+
+@media  (max-width:1000px) {
+    .mySwiper {
+        height: 400px;
     }
-    .container  .studio-img img {
-        width: 100%;
-        height: 100%;
-    
-    }
-} */
+} 
 
 /* Comportement cacher par default */
+
 .logo,
 .menu,
-.vinyle,
-.container  {
+.container .swiper-wrapper {
     opacity: 0;
 }

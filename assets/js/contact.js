@@ -16,14 +16,21 @@ if(pageWidth > 1000){
             duration: 3000,
             delay: anime.stagger(150, {start:1500})
         })
-
-    anime({
-        targets: '.container ',
-        opacity: 1,
-        delay: 2950,
-        duration: 2300,
-        easing: 'easeInSine'
-    })
+        // Images overlay effect
+        anime({
+            targets: '.studio-img-overlay',
+            translateX: 1600,
+            delay: 1000,
+            duration: 1500,
+            easing: 'easeInSine'
+        })
+        anime({
+            targets: '.container .swiper-wrapper',
+            opacity: 1,
+            delay: 2950,
+            duration: 2300,
+            easing: 'easeInSine'
+        })
 
     })
 
@@ -31,11 +38,18 @@ if(pageWidth > 1000){
     console.log('pas ok')
     $(document).ready(function(){
         anime({
-            targets: ' .menu, .logo, .container',
+            targets: ' .menu, .logo, .container .swiper-wrapper',
             opacity: 1,
             easing: 'easeOutExpo',
             duration: 4000,
             delay: anime.stagger(1500, {start: 200})
+        })
+        anime({
+            targets: '.studio-img-overlay',
+            translateX: 1600,
+            delay: 2500,
+            duration: 1500,
+            easing: 'easeInSine'
         })
 
     })
