@@ -16,16 +16,9 @@ if(pageWidth > 1000){
             duration: 3000,
             delay: anime.stagger(150, {start:1500})
         })
-            // Images overlay effect
+
     anime({
-        targets: '.container .studio-img-overlay',
-        translateX: 1710,
-        delay: 2700,
-        duration: 1500,
-        easing: 'easeInSine'
-    })
-    anime({
-        targets: '.container .studio-img .vinyle,.container  .disque-image-logo',
+        targets: '.container ',
         opacity: 1,
         delay: 2950,
         duration: 2300,
@@ -38,7 +31,7 @@ if(pageWidth > 1000){
     console.log('pas ok')
     $(document).ready(function(){
         anime({
-            targets: ' .menu, .logo, .studio-img .vinyle',
+            targets: ' .menu, .logo, .container',
             opacity: 1,
             easing: 'easeOutExpo',
             duration: 4000,
@@ -47,3 +40,16 @@ if(pageWidth > 1000){
 
     })
 }
+
+const swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true
+    },
+    speed: 2000,
+    autoplay: {
+        delay: 5000,
+    },
+
+  });

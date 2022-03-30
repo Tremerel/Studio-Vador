@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="assets/css/transition.css">
+
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <div class="transition transition-1 is-active"></div>
@@ -44,15 +49,33 @@
                 <path stroke="#FFFFFF" stroke-width="3" fill="none" d="M59.71,162.511q-18.482,0-27.982,9.45t-9.5,27.93q0,18.482,9.5,27.93t27.983,9.45q16.589,0,25.672-7.875t9.083-22.68H73.045q0,6.3-3.465,9.765T59.4,219.946q-6.827,0-10.132-4.462t-3.308-12.233v-6.72q0-7.875,3.308-12.285t10.342-4.41q6.088,0,9.4,3.675t3.308,9.975H94.465q0-14.909-9.345-22.942t-25.41-8.033h0Zm83.16,0q-18.692,0-28.823,9.5t-10.132,27.877q0,18.376,10.132,27.878t28.823,9.5q18.689,0,28.875-9.555t10.185-27.825q0-18.27-10.185-27.825t-28.875-9.555h0Zm0,17.325q7.453,0,11.392,4.515t3.938,12.18v6.72q0,7.666-3.938,12.18t-11.392,4.515q-7.457,0-11.34-4.515t-3.885-12.18v-6.72q0-7.663,3.885-12.18t11.34-4.515h0Zm123.479,56.175v-72.24H245.034v35.6l-30.345-35.6H194.424v72.24h21.315v-35.07l30.345,35.07h20.265Zm80.744-53.76v-18.48h-70.56v18.48h23.73v53.76h23.205v-53.76h23.625Zm76.44,53.76-26.355-72.24H370.193l-26.355,72.24h23.73l3.045-10.185h25.305l3.045,10.185h24.57Zm-40.425-52.08h0.42l7.56,25.725H375.443Zm81.691-21.42q-18.483,0-27.983,9.45t-9.5,27.93q0,18.482,9.5,27.93t27.983,9.45q16.589,0,25.672-7.875t9.083-22.68h-21.42q0,6.3-3.465,9.765t-10.185,3.465q-6.828,0-10.133-4.462t-3.307-12.233v-6.72q0-7.875,3.307-12.285t10.343-4.41q6.087,0,9.4,3.675t3.308,9.975h22.155q0-14.909-9.345-22.942t-25.41-8.033h0Zm112.455,19.74v-18.48h-70.56v18.48h23.73v53.76h23.205v-53.76h23.625Z">
             </svg>
         </div>
-
+<!-- 
         <div class="container">
-            <div class="studio-img">
-                <div class="disque-image-logo"></div>
-                <span class="studio-img-overlay"></span>
-                <img class="vinyle" src="assets/content/Home-studio.jpg" alt="">
+            <div class="studio-img1">
             </div>
-        </div>
-
+            <div class="studio-img2">
+            </div>
+            <div class="studio-img3">
+            </div>
+            <div class="studio-img4">
+            </div>
+        </div> -->
+        <div class="container mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/content/grande-salles-01.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/content/grande-salles-02.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/content/grande-salles-03.jpeg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/content/grande-salles-04.jpg" />
+              </div>
+            </div>
+          </div>
     </div>
 
 
@@ -63,6 +86,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
     <!-- Anime js link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <script src="assets/js/transition.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/contact.js"></script>
