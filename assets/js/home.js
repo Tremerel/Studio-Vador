@@ -26,6 +26,13 @@ $(document).ready(function(){
         duration: 1500,
         easing: 'easeInSine'
     })
+    anime({
+        targets: '.home .studio-img .vinyle-filter',
+        opacity: 0.55,
+        delay: 1500,
+        duration: 1500,
+        easing: 'easeInSine'
+    })
 
 
     // Petit titre 

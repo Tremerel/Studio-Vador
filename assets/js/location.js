@@ -41,29 +41,3 @@ if(pageWidth > 1000){
         })
     })
 }
-
-// let cards = document.querySelectorAll('.card');
-
-// cards.forEach((card) => {
-//     card.addEventListener('mouseenter', (event) => {
-//         anime.remove(card.querySelector(".card"));
-
-//         anime({
-//             targets: card,
-//             easing: 'easeOutExpo',
-//             scale: 1.1,
-//             duration: 1000
-//         })
-//     })
-
-//     card.addEventListener('mouseleave', (event) => {
-//         anime.remove(card.querySelector(".card"));
-
-//         anime({
-//             targets: card,
-//             easing: 'easeOutExpo',
-//             scale: 1,
-//             duration: 1000,
-//         })
-//     })
-// })

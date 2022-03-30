@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Archivo";
+    src: url("../content/fonts/ArchivoBlack-Regular.ttf") format("truetype");
+}
+  
+@font-face {
+    font-family: "Bahnschrift";
+    src: url("../content/fonts/BAHNSCHRIFT.TTF") format("truetype");
+}
+h1, h2, h3, h4{
+    font-family: "Archivo";
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +23,7 @@ body{
     font-family: sans-serif;
     height: 100%;
     width: 100%;
+    font-family: "Bahnschrift";
 }
 .background {
     position: fixed;
@@ -570,6 +584,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 99;
 }
 
 /* Header */
@@ -590,13 +605,14 @@ nav{
 }
 .logo{
     padding: .5em;
+    margin-left: 10px;
     font-size: 30px;
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
 }
 .logo img {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
 }
 nav ul {
     display: flex;
@@ -613,7 +629,6 @@ nav ul li a {
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
     transition: all ease 0.5s;
 }
 nav ul li a:hover {

@@ -19,15 +19,15 @@ if(pageWidth > 1000){
             // Images overlay effect
     anime({
         targets: '.container .studio-img-overlay',
-        translateX: 1510,
-        delay: 1000,
+        translateX: 1710,
+        delay: 2700,
         duration: 1500,
         easing: 'easeInSine'
     })
     anime({
-        targets: '.container .studio-img img,.container  .disque-image-logo',
+        targets: '.container .studio-img .vinyle,.container  .disque-image-logo',
         opacity: 1,
-        delay: 1300,
+        delay: 2950,
         duration: 2300,
         easing: 'easeInSine'
     })
@@ -38,7 +38,7 @@ if(pageWidth > 1000){
     console.log('pas ok')
     $(document).ready(function(){
         anime({
-            targets: ' .menu, .logo, .studio-img img',
+            targets: ' .menu, .logo, .studio-img .vinyle',
             opacity: 1,
             easing: 'easeOutExpo',
             duration: 4000,
