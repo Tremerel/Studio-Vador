@@ -12,7 +12,7 @@ if(pageWidth > 1000){
     
         // card container 
         anime({
-            targets: '.card-container .card',
+            targets: '.loader',
             opacity: 1,
             duration: 3000,
             easing: 'easeInOutSine',

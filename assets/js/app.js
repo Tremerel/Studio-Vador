@@ -69,7 +69,7 @@ $(document).ready(function(){
     anime({
         targets: '#svg',
         easing: 'easeInSine',
-        translateY: -250,
+        translateY: -200,
         delay: 2000
     }) 
 

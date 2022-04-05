@@ -30,6 +30,13 @@ if(pageWidth > 1000){
             duration: 3000,
             delay: anime.stagger(500, {start:3000}),
         })
+        anime({
+            targets: '.info',
+            opacity: 1,
+            delay: 3000,
+            duration: 3000,
+            easing: 'easeInOutQuad',
+        })
 
 
     
@@ -38,33 +45,13 @@ if(pageWidth > 1000){
 } else {
     $(document).ready(function(){
         anime({
-            targets: '.card-container, .menu, .logo',
+            targets: '.card-container, .menu, .logo, .info',
             opacity: 1,
             easing: 'easeOutExpo',
             duration: 1000,
             delay: anime.stagger(150, {start: 4000})
         })
 
-        // anime({
-        //     targets: '#svg ',
-        //     scale: 0.8,
-        //     duration: 0,
-        // })
-        anime({
-            targets: '#svg ',
-            easing: 'easeInSine',
-            translateY: -200,
-            delay: 2800
-        })
-        anime({
-            targets: '#svg path',
-            strokeDashoffset: [anime.setDashoffset, 0],
-            scale: 1,
-            easing: 'easeInOutSine',
-            duration: 5000,
-            delay: function(el, i) { return i * 500 },
-            loop: false
-        })
     })
 }
 

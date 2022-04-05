@@ -31,19 +31,57 @@
 
 /* Css carte de contact et icone */
 
+.contact-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 150px;
+    transform: translate(-50%,-50%);
+    width: 250px;
+    background: #0a0b10;
+    opacity: 0.9;
+    transition: all 0.8s;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact-card:hover {
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 30px 90px;
+}
+.contact-card:hover{
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.contact-card img{
+    width: 100%;
+}
+.contact-card .info {
+    font-size:17px;
+    color:#fff;
+}
+.contact-card .icon {
+    font-size: 30px;
+    color:#fff;
+}
 
 /* Media Query */
 
-@media  (max-width:1000px) {
+/* @media  (max-width:1000px) {
     .mySwiper {
         height: 400px;
     }
-} 
+}  */
 
 /* Comportement cacher par default */
 
 .logo,
 .menu,
+.contact-card,
 .container .swiper-wrapper {
     opacity: 0;
 }

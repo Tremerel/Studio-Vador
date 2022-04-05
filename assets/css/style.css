@@ -58,7 +58,7 @@ body{
     top: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(ellipse at bottom, #a80000 0%, hsl(230, 25%, 5%) 25%);
+    background: radial-gradient(ellipse at bottom, #a80000 0%, #0a0b10 25%);
     background-size: 400% 400%;
     animation: animBg 100s ease infinite; 
 }
@@ -605,7 +605,7 @@ body{
 .svg-container{ 
     position: absolute;
     margin: 0;
-    height: 100%;
+    height: 800px;
     width: 100%;
     display: flex;
     justify-content: center;

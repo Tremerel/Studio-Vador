@@ -13,14 +13,14 @@ if(pageWidth > 1000){
         anime({
             targets: '.menu, .logo',
             opacity: 1,
-            duration: 3000,
+            duration: 3200,
             delay: anime.stagger(150, {start:1500})
         })
         // Images overlay effect
         anime({
             targets: '.studio-img-overlay',
             translateX: 1600,
-            delay: 1000,
+            delay: 3000,
             duration: 1500,
             easing: 'easeInSine'
         })
@@ -28,7 +28,14 @@ if(pageWidth > 1000){
             targets: '.container .swiper-wrapper',
             opacity: 1,
             delay: 2950,
-            duration: 2300,
+            duration: 2600,
+            easing: 'easeInSine'
+        })
+        anime({
+            targets: ' .contact-card',
+            opacity: 1,
+            delay: 3600,
+            duration: 2000,
             easing: 'easeInSine'
         })
 
@@ -38,7 +45,7 @@ if(pageWidth > 1000){
     console.log('pas ok')
     $(document).ready(function(){
         anime({
-            targets: ' .menu, .logo, .container .swiper-wrapper',
+            targets: ' .menu, .logo, .container .swiper-wrapper, .contact-card',
             opacity: 1,
             easing: 'easeOutExpo',
             duration: 4000,
@@ -47,7 +54,7 @@ if(pageWidth > 1000){
         anime({
             targets: '.studio-img-overlay',
             translateX: 1600,
-            delay: 2500,
+            delay: 3000,
             duration: 1500,
             easing: 'easeInSine'
         })
