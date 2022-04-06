@@ -166,6 +166,7 @@
     }
     
     .home-text {
+        left: 10px;
         margin-top: 0;
         color: #fff;
         position: absolute;
