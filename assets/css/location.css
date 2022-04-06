@@ -1,7 +1,7 @@
 /* Em attendant le contenue petit loader */
 .loader {
     position: absolute;
-    z-index: 9999;
+    z-index: 999;
     top: 250px;
     left: 50%;
     transform: translateX(-50%);

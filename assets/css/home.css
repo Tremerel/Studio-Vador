@@ -160,7 +160,7 @@
 
 @media (max-width:850px) {
     .container  .studio-img {
-        left: 25%;
+        left: 22%;
         width: 600px;
         height: 600px;
     }
@@ -169,7 +169,7 @@
         margin-top: 0;
         color: #fff;
         position: absolute;
-        margin-left: 30px;
+        margin-left: 10px;
     }
 
     .home-text h1 {
