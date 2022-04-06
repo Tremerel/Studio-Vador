@@ -2,9 +2,9 @@
 .loader {
     position: absolute;
     z-index: 9999;
-    top: 50%;
+    top: 450px;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%);
     background:#0a0b10;
     padding: 20px 50px;
     border-top-left-radius: 10px;

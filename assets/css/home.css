@@ -160,7 +160,7 @@
 
 @media (max-width:850px) {
     .container  .studio-img {
-        left: 35%;
+        left: 25%;
         width: 600px;
         height: 600px;
     }
@@ -174,7 +174,7 @@
 
     .home-text h1 {
         text-transform: uppercase;
-        font-size: 70px;
+        font-size: 60px;
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         grid-template-rows: repeat(2, 1fr);
