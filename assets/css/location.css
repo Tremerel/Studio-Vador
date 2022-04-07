@@ -2,9 +2,9 @@
 .loader {
     position: absolute;
     z-index: 999;
-    top: 250px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     background:#0a0b10;
     padding: 20px 50px;
     border-top-left-radius: 10px;
@@ -51,7 +51,14 @@
       transform: translateY(0);
     }
   }
-  
+
+  @media (max-width:1000px){
+    .loader{
+        top: 350px;
+        padding: 15px 22px;
+    }
+}
+
 /* Placement du contenue */
 
 .container{

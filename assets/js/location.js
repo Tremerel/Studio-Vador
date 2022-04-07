@@ -33,7 +33,7 @@ if(pageWidth > 1000){
     $(document).ready(function(){
         
         anime({
-            targets: ' .menu, .logo, .card',
+            targets: ' .menu, .logo, .card, .loader',
             opacity: 1,
             easing: 'easeOutExpo',
             duration: 4000,
